@@ -1,6 +1,6 @@
 name: fancy_dialog
-description: Custom Alert Dialog,with 2 Themes Fancy and Flat.
-version: 1.0.0
+description: Custom Alert Dialog,inspired from FancyGifDialog for android,the new thing is that you can choose between 2 themes Fancy and Flat and you can load images and Gif from your assets.
+version: 1.0.1
 author: Dokkar Rachid Reda <hr_dokkar@esi.dz>
 homepage: https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog
 
