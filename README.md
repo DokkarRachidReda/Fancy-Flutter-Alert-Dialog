@@ -6,7 +6,7 @@ A flutter Package to show custom alert Dialog,you can choose between two themes 
 
 ### Import the Package 
 add this dependencies to your app
-``` dependencies: fancy_dialog: ^0.0.1 ```
+``` dependencies: fancy_dialog: ^1.0.1 ```
 ### Use the Package
 add this import statement 
 ``` import 'package:fancy_dialog/fancy_dialog.dart';```
