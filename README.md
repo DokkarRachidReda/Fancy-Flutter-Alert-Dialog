@@ -10,16 +10,21 @@ add this dependencies to your app
 ### Use the Package
 add this import statement 
 ``` import 'package:fancy_dialog/fancy_dialog.dart';```
+
 to show a Basic Dialog
-``` showDialog(
+
+```Dart
+showDialog(
               context: context,
               builder: (BuildContext context) => FancyDialog(
                 title: "Fancy Gif Dialog",
                 descreption: "This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                 )
             ) 
-         }, ```
- the ``` title ``` and ``` descreption ``` are required
+         }, 
+```
+         
+the  ``` title ``` and ``` descreption ``` are required
  and the rest of the parameters are :
  * ``` okFun ``` : the function to be called when the user press Ok button (positive button)
  * ``` cancelFun ``` : the function to be called when the user press cancel button (negative button)
@@ -29,18 +34,23 @@ to show a Basic Dialog
  * ``` cancel ``` : the text of the negative button, by default it's 'cancel'
  * ``` animationType ``` : The type of the animation, there are 4 types,which are :
 
-        * ``` FancyAnimation.LEFT_RIGHT ``` the default one
-        * ``` FancyAnimation.RIGHT_LEFT ```
-        * ``` FancyAnimation.TOP_BOTTOM ``` 
-        * ``` FancyAnimation.BOTTOM_TOP ```  
+      *  ```FancyAnimation.LEFT_RIGHT```    the default one
+      *  ``` FancyAnimation.RIGHT_LEFT ```
+      *  ``` FancyAnimation.TOP_BOTTOM ``` 
+      *  ``` FancyAnimation.BOTTOM_TOP ```  
 
  * ``` theme ``` : Fancy or Flat 
 
-        * ``` FancyTheme.FANCY ```
-        * ``` FancyTheme.FLAT ```
+     * ``` FancyTheme.FANCY ```
+     * ``` FancyTheme.FLAT ```
 
 The dialog will be dissmised by default when the user click Ok or cancel, DON'T ADD 
 ```Navigator.of(context).pop()``` to  ``` okFun ``` or ``` cancelFun ```
 
+## ScreenShots
+
+<img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/Screenshots/1.gif" height="420" width="240" hspace="20"><img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/Screenshots/2_flat.gif" height="420" width="240" hspace="20">
+
+<img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/Screenshots/3.gif" height="420" width="240" hspace="20"><img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/Screenshots/4_flat.gif" height="420" width="240" hspace="20">
 ## Contribution 
 Feel free to contribute, to report a bug to suggest a feature, Thanl you :)
