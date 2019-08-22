@@ -37,7 +37,16 @@ the  ``` title ``` and ``` descreption ``` are required
       *  ```FancyAnimation.LEFT_RIGHT```    the default one
       *  ``` FancyAnimation.RIGHT_LEFT ```
       *  ``` FancyAnimation.TOP_BOTTOM ``` 
-      *  ``` FancyAnimation.BOTTOM_TOP ```  
+      *  ``` FancyAnimation.BOTTOM_TOP ```
+      
+ * ``` gifpath ``` : the path for the image or the GIF to be displayed,or you can choose between 6 Gifs the package provides :
+      
+      * ```FancyGif.MOVE_FORWARD``` the default one
+      * ```FancyGif.CHECK_MAIL```
+      * ```FancyGif.FUNNY_MAN```
+      * ```FancyGif.PLAY_MEDIA```
+      * ```FancyGif.SUBMIT```
+      * ```FancyGif.SHARE```
 
  * ``` theme ``` : Fancy or Flat 
 
