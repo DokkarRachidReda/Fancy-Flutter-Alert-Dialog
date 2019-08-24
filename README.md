@@ -2,6 +2,8 @@
 
 A flutter Package to show custom alert Dialog,you can choose between two themes 'Fancy' and 'Flat'
 
+The package is available in [fancy_dialog](https://pub.dev/packages/fancy_dialog)
+
 ## Usage 
 
 ### Import the Package 
