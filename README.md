@@ -23,7 +23,7 @@ showDialog(
                 descreption: "This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                 )
             ) 
-         }, 
+          
 ```
          
 the  ``` title ``` and ``` descreption ``` are required
