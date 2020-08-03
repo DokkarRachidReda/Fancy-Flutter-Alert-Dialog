@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 
 import 'FancyGif.dart';
 
+const testKeys = [
+  Key("fancyButtons"),
+  Key("flatButtons")
+];
+
 class FancyDialog extends StatefulWidget {
   const FancyDialog(
       {Key key,
-
-      @required
-      this.title,
-
-      @required
-      this.descreption,
-
+      @required this.title,
+      @required this.descreption,
       this.okFun,
       this.cancelFun,
       this.animationType = 1,
@@ -127,10 +127,6 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     });
 
     ac.forward();
-
-    assert(MediaQuery.of(context,nullOk: true) != null,'\n****context does not contain media query object***\n');
-    assert(title!= null,'\n****title is required***\n');
-    assert(descreption!= null,'\n****descreption is required***\n');
     super.initState();
   }
 
@@ -140,6 +136,9 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     height = MediaQuery.of(context).size.height;
     var dialogWidth = 0.36 * height;
     
+    assert(MediaQuery.of(context,nullOk: true) != null,'\n****context does not contain media query object***\n');
+    assert(title!= null,'\n****title is required***\n');
+    assert(descreption!= null,'\n****descreption is required***\n');
   
     var image = ClipRRect(
       child: Image.asset(
@@ -155,7 +154,7 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
       );
 
     return GestureDetector(
-      onTap: () => {Navigator.of(context).pop()},
+      onTap: (){Navigator.of(context).pop();},
       child: Dialog(
               shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(theme == 0 ? 15 : 0),
@@ -234,6 +233,7 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     return 
       Container(
         child: RaisedButton(
+                key: testKeys[0],
                 shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0)
                       ),
@@ -255,6 +255,7 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     return 
       Container(
         child: FlatButton(
+                key: testKeys[1],
                 child: Text(
                         t,
                         style: TextStyle(color: c, fontSize: 15),
