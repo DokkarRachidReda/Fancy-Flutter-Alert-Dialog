@@ -7,8 +7,9 @@ import 'package:fancy_dialog/fancy_dialog.dart';
 void main(){
 
   
+    group('assertions test', (){
 
-    testWidgets('show dialog test', (WidgetTester tester) async {
+      testWidgets('null context test', (WidgetTester tester) async {
 
         await tester.pumpWidget(
               FancyDialog(
@@ -25,5 +26,49 @@ void main(){
            expect(tester.takeException(),isAssertionError);
 
      
-});
+       });
+
+
+       testWidgets('null title test test', (WidgetTester tester) async {
+
+        await tester.pumpWidget(
+              FancyDialog(
+                descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                animationType: FancyAnimation.BOTTOM_TOP,
+                theme: FancyTheme.FANCY,
+                gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
+                okFun: (){print("it's working :)");},
+              )
+           );
+          
+           await tester.pump(Duration(seconds: 3));
+           expect(tester.takeException(),isAssertionError);
+
+     
+       });
+
+
+       testWidgets('null descreption test test', (WidgetTester tester) async {
+
+        await tester.pumpWidget(
+              FancyDialog(
+                title: "",
+                animationType: FancyAnimation.BOTTOM_TOP,
+                theme: FancyTheme.FANCY,
+                gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
+                okFun: (){print("it's working :)");},
+              )
+           );
+          
+           await tester.pump(Duration(seconds: 3));
+           expect(tester.takeException(),isAssertionError);
+
+     
+       });
+
+
+
+
+    });
+    
 }
