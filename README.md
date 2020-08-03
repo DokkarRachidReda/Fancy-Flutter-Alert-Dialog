@@ -1,5 +1,7 @@
 # Fancy Flutter Alert Dialog
 
+[![Build Status](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg?branch=master)](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog) [![Coverage Status](https://coveralls.io/repos/github/DokkarRachidReda/DokkarRachidReda/badge.svg?branch=master)](https://coveralls.io/github/DokkarRachidReda/DokkarRachidReda?branch=master) 
+
 A flutter Package to show custom alert Dialog,you can choose between two themes 'Fancy' and 'Flat'
 
 The package is available in [fancy_dialog](https://pub.dev/packages/fancy_dialog)
