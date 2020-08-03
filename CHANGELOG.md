@@ -6,8 +6,14 @@
 
 * Update Demo.
 * Add Screenshots.
-* Update coode.
+* Update code.
 
 ## [1.0.1] : 22/08/2019.
 
 * Update readme
+
+## [1.0.2] : 03/08/2020.
+
+* fixed heigh calculation error
+* added assertions with custom error messages
+* added unit tests
