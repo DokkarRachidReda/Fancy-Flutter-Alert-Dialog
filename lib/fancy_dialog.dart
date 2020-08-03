@@ -132,116 +132,129 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
 
     var image = ClipRRect(
       child: Image.asset(
-        gifPath,
-        fit: BoxFit.fill,
-        width: dialogWidth * 1.1, // dialogWidth will get left/right margin?
-        height: dialogWidth * 0.6,
-        package: package == 1 ? 'fancy_dialog' : null,
-      ),
+              gifPath,
+              fit: BoxFit.fill,
+              width: dialogWidth * 1.1, // dialogWidth will get left/right margin?
+              height: dialogWidth * 0.6,
+              package: package == 1 ? 'fancy_dialog' : null,
+            ),
       borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(theme == 0 ? 15 : 0),
-          topRight: Radius.circular(theme == 0 ? 15 : 0)),
-    );
+                      topLeft: Radius.circular(theme == 0 ? 15 : 0),
+                      topRight: Radius.circular(theme == 0 ? 15 : 0)),
+      );
 
     return GestureDetector(
       onTap: () => {Navigator.of(context).pop()},
       child: Dialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(theme == 0 ? 15 : 0),
-        ),
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-        child: Container(
-          width: dialogWidth,
-          transform: Matrix4.translationValues(
-              animationAxis == 0 ? animation.value * width : 0,
-              animationAxis == 1 ? animation.value * width : 0,
-              0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(theme == 0 ? 15 : 0),
-            color: Colors.white,
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              image,
-              Padding(
-                padding: const EdgeInsets.all(5),
-                child: Text(
-                  title,
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                ),
+              shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(theme == 0 ? 15 : 0),
               ),
-              Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                  child: Container(
-                    child: Text(
-                      descreption,
-                      style: TextStyle(color: Colors.grey[600], fontSize: 15),
-                      textAlign: TextAlign.center,
-                      maxLines: 5,
-                      overflow: TextOverflow.ellipsis,
+              elevation: 0.0,
+              backgroundColor: Colors.transparent,
+              child: Container(
+                      width: dialogWidth,
+                      transform: Matrix4.translationValues(
+                                  animationAxis == 0 ? animation.value * width : 0,
+                                  animationAxis == 1 ? animation.value * width : 0,
+                                  0
+                      ),
+                      decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(theme == 0 ? 15 : 0),
+                            color: Colors.white,
+                            ),
+                      child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                        image,
+                                        Padding(
+                                          padding: const EdgeInsets.all(5),
+                                          child: Text(
+                                                  title,
+                                                  style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize: 20,
+                                                          fontWeight: FontWeight.bold
+                                                    ),
+                                                  ),
+                                          ),
+                                          
+                                          Padding(
+                                            padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                                            child: Container(
+                                                    child: Text(
+                                                            descreption,
+                                                            style: TextStyle(color: Colors.grey[600], fontSize: 15),
+                                                            textAlign: TextAlign.center,
+                                                            maxLines: 5,
+                                                            overflow: TextOverflow.ellipsis,
+                                                      ),
+                                                  )
+                                            ),
+
+                                          Container(
+                                            child: Row(
+                                                    mainAxisAlignment: theme == 1
+                                                    ? MainAxisAlignment.end
+                                                    : MainAxisAlignment.center,
+                                                    children: <Widget>[
+                                                              theme == 0
+                                                              ? customButton(cancel, cancelColor, cancelFun)
+                                                              : flatButton(cancel, cancelColor, cancelFun),
+                                                      
+                                                              SizedBox(
+                                                                width: 10,
+                                                              ),
+                                                      
+                                                              theme == 0
+                                                              ? customButton(ok, okColor, okFun)
+                                                              : flatButton(ok, okColor, okFun)
+                                                            ],
+                                                    ),
+                                            )
+                                  ],
+                              ),
                     ),
-                  )),
-              Container(
-                child: Row(
-                  mainAxisAlignment: theme == 1
-                      ? MainAxisAlignment.end
-                      : MainAxisAlignment.center,
-                  children: <Widget>[
-                    theme == 0
-                        ? customButton(cancel, cancelColor, cancelFun)
-                        : flatButton(cancel, cancelColor, cancelFun),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    theme == 0
-                        ? customButton(ok, okColor, okFun)
-                        : flatButton(ok, okColor, okFun)
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+              ),
+        );
   }
 
   Widget customButton(String t, Color c, Function f) {
-    return Container(
-      child: RaisedButton(
-        shape: RoundedRectangleBorder(
-            borderRadius: new BorderRadius.circular(30.0)),
-        color: c,
-        child: Text(
-          t,
-          style: TextStyle(color: Colors.white, fontSize: 15),
-        ),
-        onPressed: () => {
-          f != null ? f() : print("function is null"),
-          Navigator.of(context).pop()
-        },
-      ),
-    );
+    return 
+      Container(
+        child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0)
+                      ),
+                color: c,
+                child: Text(
+                        t,
+                        style: TextStyle(color: Colors.white, fontSize: 15),
+                      ),
+                
+                onPressed: (){
+                      f != null ? f() : print("function is null");
+                      Navigator.of(context).pop();
+                      },
+                ),
+        );
   }
 
   Widget flatButton(String t, Color c, Function f) {
-    return Container(
-      child: FlatButton(
-        child: Text(
-          t,
-          style: TextStyle(color: c, fontSize: 15),
-        ),
-        onPressed: () => {
-          f != null ? f() : print("function is null"),
-          Navigator.of(context).pop()
-        },
-      ),
-    );
-  }
+    return 
+      Container(
+        child: FlatButton(
+                child: Text(
+                        t,
+                        style: TextStyle(color: c, fontSize: 15),
+                      ),
+                
+                onPressed: (){
+                    f != null ? f() : print("function is null");
+                    Navigator.of(context).pop();
+                    },
+                ),
+          );
+   }
+   
 }
