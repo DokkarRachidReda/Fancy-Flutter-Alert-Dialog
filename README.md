@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg)](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog)
 
-[![Build Status](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg?branch=master)](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog) [![Coverage Status](https://coveralls.io/repos/github/DokkarRachidReda/DokkarRachidReda/badge.svg?branch=master)](https://coveralls.io/github/DokkarRachidReda/DokkarRachidReda?branch=master) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=plastic)
+[![Build Status](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg?branch=master)](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog) [![Coverage Status](https://coveralls.io/repos/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/badge.svg?branch=master)](https://coveralls.io/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?branch=master) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=plastic)
 
 
 ![GitHub stars](https://img.shields.io/github/stars/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/DokkarReda?style=social)
