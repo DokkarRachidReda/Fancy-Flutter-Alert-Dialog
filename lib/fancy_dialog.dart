@@ -121,6 +121,9 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     });
 
     ac.forward();
+
+    assert(MediaQuery.of(context,nullOk: true) != null,'\n****context does not contain media query object***\n');
+
     super.initState();
   }
 
@@ -129,7 +132,8 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
     var dialogWidth = 0.36 * height;
-
+    
+  
     var image = ClipRRect(
       child: Image.asset(
               gifPath,
@@ -256,5 +260,5 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
                 ),
           );
    }
-   
+
 }
