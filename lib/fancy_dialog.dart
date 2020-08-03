@@ -7,8 +7,13 @@ import 'FancyGif.dart';
 class FancyDialog extends StatefulWidget {
   const FancyDialog(
       {Key key,
+
+      @required
       this.title,
+
+      @required
       this.descreption,
+
       this.okFun,
       this.cancelFun,
       this.animationType = 1,
@@ -17,7 +22,8 @@ class FancyDialog extends StatefulWidget {
       this.okColor = Colors.pink,
       this.ok = " OK !",
       this.cancel = "Cancel",
-      this.theme = 0})
+      this.theme = 0 //default theme is fancy
+      })
       : super(key: key);
 
   final String title;
@@ -123,7 +129,8 @@ class GifDialogState extends State<FancyDialog> with TickerProviderStateMixin {
     ac.forward();
 
     assert(MediaQuery.of(context,nullOk: true) != null,'\n****context does not contain media query object***\n');
-
+    assert(title!= null,'\n****title is required***\n');
+    assert(descreption!= null,'\n****descreption is required***\n');
     super.initState();
   }
 
