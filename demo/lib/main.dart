@@ -6,6 +6,11 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+const List<Key> keys = [
+  Key("Fancy"),
+  Key("Flat"),
+];
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -45,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: RaisedButton(
+              key: keys[0],
               child: Text("Fancy Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
               onPressed: (){
                 showDialog(
@@ -65,6 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: RaisedButton(
+              key: keys[1],
               child: Text("Flat Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
               onPressed: (){
                 showDialog(
