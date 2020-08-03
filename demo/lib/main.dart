@@ -39,22 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: EdgeInsets.all(20),
           ),
-          Text(
-            "data",
-            style: TextStyle(
-                color: Colors.red, fontWeight: FontWeight.bold, fontSize: 30),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 30),
-            child: Text(
-              "hello",
-              style: TextStyle(
-                  color: Colors.red, fontWeight: FontWeight.bold, fontSize: 20),
-            ),
-          ),
+          
+          SizedBox(height: 100,),
+
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: RaisedButton(
+              child: Text("Fancy Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
               onPressed: (){
                 showDialog(
                     context: context,
@@ -64,6 +55,25 @@ class _MyHomePageState extends State<MyHomePage> {
                               "This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                           animationType: FancyAnimation.BOTTOM_TOP,
                           theme: FancyTheme.FANCY,
+                          gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
+                          okFun: (){print("it's working :)");},
+                        ));
+              },
+            ),
+          ),
+
+          Padding(
+            padding: EdgeInsets.only(top: 50),
+            child: RaisedButton(
+              child: Text("Flat Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
+              onPressed: (){
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) => FancyDialog(
+                          title: "Fancy Gif Dialog",
+                          descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                          animationType: FancyAnimation.BOTTOM_TOP,
+                          theme: FancyTheme.FLAT,
                           gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
                           okFun: (){print("it's working :)");},
                         ));
