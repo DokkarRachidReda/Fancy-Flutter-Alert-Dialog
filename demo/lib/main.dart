@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: EdgeInsets.only(top: 50),
             child: RaisedButton(
-              onPressed: () => {
+              onPressed: (){
                 showDialog(
                     context: context,
                     builder: (BuildContext context) => FancyDialog(
@@ -65,8 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           animationType: FancyAnimation.BOTTOM_TOP,
                           theme: FancyTheme.FANCY,
                           gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
-                          okFun: () => {print("it's working :)")},
-                        ))
+                          okFun: (){print("it's working :)");},
+                        ));
               },
             ),
           )
