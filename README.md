@@ -64,4 +64,6 @@ The dialog will be dissmised by default when the user click Ok or cancel, DON'T 
 
 <img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/blob/master/Screenshots/3.gif" height="420" width="240" hspace="20"><img src="https://github.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/blob/master/Screenshots/4_flat.gif" height="420" width="240" hspace="20">
 ## Contribution 
-Feel free to contribute, to report a bug to suggest a feature, Thank you :)
+Feel free to contribute,report a bug or to suggest a feature
+
+Thank you :)
