@@ -21,7 +21,7 @@ The package is available in [fancy_dialog](https://pub.dev/packages/fancy_dialog
 
 ### Import the Package 
 add this dependencies to your app
-``` dependencies: fancy_dialog: ^1.0.1 ```
+``` dependencies: fancy_dialog: ^1.0.4 ```
 ### Use the Package
 add this import statement 
 ``` import 'package:fancy_dialog/fancy_dialog.dart';```
