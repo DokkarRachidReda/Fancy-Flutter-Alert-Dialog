@@ -1,6 +1,6 @@
 # Fancy Flutter Alert Dialog
 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FDokkarRachidReda%2FFancy-Flutter-Alert-Dialog)
+[![HitCount](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg)](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog)
 
 [![Build Status](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg?branch=master)](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog) [![Coverage Status](https://coveralls.io/repos/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/badge.svg?branch=master)](https://coveralls.io/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?branch=master) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=plastic)
 
