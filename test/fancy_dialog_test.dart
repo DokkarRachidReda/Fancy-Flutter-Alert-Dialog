@@ -139,6 +139,83 @@ void main(){
 
     });
 
+    group('default values test',(){
 
+      testWidgets('theme test', (WidgetTester tester) async {
+        
+       try{
+
+         var widget = FancyDialog(
+                        title: "Fancy Gif Dialog",
+                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                      );
+
+         await tester.pumpWidget(widget);
+
+         await tester.pump(Duration(seconds: 3));
+           
+           //no context is provided
+           expect(tester.takeException(),isException);
+
+           //by default theme is FANCY
+           expect(widget.theme,FancyTheme.FANCY);
+       }catch(err){
+         
+       }
+          
+       });
+
+
+
+       testWidgets('animation test', (WidgetTester tester) async {
+        
+       try{
+
+         var widget = FancyDialog(
+                        title: "Fancy Gif Dialog",
+                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                      );
+
+         await tester.pumpWidget(widget);
+
+         await tester.pump(Duration(seconds: 3));
+           
+           //no context is provided
+           expect(tester.takeException(),isException);
+
+           //by default animation is LEFT_RIGHT
+           expect(widget.animationType,FancyAnimation.LEFT_RIGHT);
+       }catch(err){
+         
+       }
+          
+       });
+
+
+       testWidgets('gif test', (WidgetTester tester) async {
+        
+       try{
+
+         var widget = FancyDialog(
+                        title: "Fancy Gif Dialog",
+                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                      );
+
+         await tester.pumpWidget(widget);
+
+         await tester.pump(Duration(seconds: 3));
+           
+           //no context is provided
+           expect(tester.takeException(),isException);
+
+           //by default gif is MOVE_FORWARD
+           expect(widget.gifPath,FancyGif.MOVE_FORWARD);
+       }catch(err){
+         
+       }
+          
+       });
+
+    });
     
 }
