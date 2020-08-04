@@ -1,5 +1,18 @@
 # Fancy Flutter Alert Dialog
 
+[![HitCount](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg)](http://hits.dwyl.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog)
+
+[![Build Status](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog.svg?branch=master)](https://travis-ci.com/DokkarRachidReda/Fancy-Flutter-Alert-Dialog) [![Coverage Status](https://coveralls.io/repos/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog/badge.svg?branch=master)](https://coveralls.io/github/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?branch=master) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=plastic)
+
+
+![GitHub stars](https://img.shields.io/github/stars/DokkarRachidReda/Fancy-Flutter-Alert-Dialog?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/DokkarReda?style=social)
+
+Pure Dart and Flutter package for Android,IOS and Web 
+
+
+<code><img height="24" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png"></code>
+<code><img height="24" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dart/dart.png"></code>
+
 A flutter Package to show custom alert Dialog,you can choose between two themes 'Fancy' and 'Flat'
 
 The package is available in [fancy_dialog](https://pub.dev/packages/fancy_dialog)
