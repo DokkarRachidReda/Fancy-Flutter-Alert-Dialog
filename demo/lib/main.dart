@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -44,45 +44,64 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: EdgeInsets.all(20),
           ),
-          
-          SizedBox(height: 100,),
-
+          SizedBox(
+            height: 100,
+          ),
           Padding(
             padding: EdgeInsets.only(top: 50),
-            child: RaisedButton(
+            child: ElevatedButton(
               key: keys[0],
-              child: Text("Fancy Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
-              onPressed: (){
+              child: Text(
+                "Fancy Dialog",
+                style: TextStyle(color: Colors.black, fontSize: 18),
+              ),
+              onPressed: () {
                 showDialog(
                     context: context,
                     builder: (BuildContext context) => FancyDialog(
+                          defaultButtons: false,
+                          actionButtons: ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Your custom button')),
+                          cancelFun: () {
+                            print('Active');
+                          },
                           title: "Fancy Gif Dialog",
-                          descreption:
-                              "This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                          description:
+                              "This is description for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                           animationType: FancyAnimation.BOTTOM_TOP,
                           theme: FancyTheme.FANCY,
                           gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
-                          okFun: (){print("it's working :)");},
+                          okFun: () {
+                            print("it's working :)");
+                          },
                         ));
               },
             ),
           ),
-
           Padding(
             padding: EdgeInsets.only(top: 50),
-            child: RaisedButton(
+            child: ElevatedButton(
               key: keys[1],
-              child: Text("Flat Dialog",style: TextStyle(color: Colors.black,fontSize: 18),),
-              onPressed: (){
+              child: Text(
+                "Flat Dialog",
+                style: TextStyle(color: Colors.black, fontSize: 18),
+              ),
+              onPressed: () {
                 showDialog(
                     context: context,
                     builder: (BuildContext context) => FancyDialog(
                           title: "Fancy Gif Dialog",
-                          descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                          titleTextStyle:
+                              TextStyle(color: Colors.red, fontSize: 25),
+                          description:
+                              "This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                           animationType: FancyAnimation.BOTTOM_TOP,
                           theme: FancyTheme.FLAT,
                           gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
-                          okFun: (){print("it's working :)");},
+                          okFun: () {
+                            print("it's working :)");
+                          },
                         ));
               },
             ),

@@ -17,7 +17,7 @@ void main(){
          await tester.pumpWidget(
               FancyDialog(
                 title: "Fancy Gif Dialog",
-                descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                description:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                 animationType: FancyAnimation.BOTTOM_TOP,
                 theme: FancyTheme.FANCY,
                 gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
@@ -42,7 +42,7 @@ void main(){
           
           await tester.pumpWidget(
               FancyDialog(
-                descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                description:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                 animationType: FancyAnimation.BOTTOM_TOP,
                 theme: FancyTheme.FANCY,
                 gifPath: FancyGif.MOVE_FORWARD, //'./assets/walp.png',
@@ -147,7 +147,7 @@ void main(){
 
          var widget = FancyDialog(
                         title: "Fancy Gif Dialog",
-                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                        description:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                       );
 
          await tester.pumpWidget(widget);
@@ -173,7 +173,7 @@ void main(){
 
          var widget = FancyDialog(
                         title: "Fancy Gif Dialog",
-                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                        description:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                       );
 
          await tester.pumpWidget(widget);
@@ -198,7 +198,7 @@ void main(){
 
          var widget = FancyDialog(
                         title: "Fancy Gif Dialog",
-                        descreption:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
+                        description:"This is descreption for fancy gif,you can load any image or gif to be displayed :), and you can choose between two themes Fancy and Flat",
                       );
 
          await tester.pumpWidget(widget);
